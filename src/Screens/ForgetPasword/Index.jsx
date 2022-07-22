@@ -91,7 +91,7 @@ return (
                         <Row className="login-input-fields">
                             <Col md={12}>
                             <FormControl
-                                control="loginInput"
+                                control="largeInput"
                                 type="email"
                                 name="email"
                                 placeholder="Enter Email Address"

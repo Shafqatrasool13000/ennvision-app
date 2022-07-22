@@ -5,14 +5,14 @@ import { Checkbox, Form } from "antd";
 import {RegisterStyledContainer } from "./style";
 import FormControl from "../../Components/FormControl";
 import CustomButton from "../../Components/CustomButton/Index";
-import {PrimaryColor, secondaryDark3, tertiaryGrey3 } from "../../Components/GlobalStyle";
+import {PrimaryColor, secondaryDark3, tertiaryGrey3, tertiaryGrey5 } from "../../Components/GlobalStyle";
 import {useNavigate} from "react-router-dom";
 import GenericService from "../../Services/GenericService";
 import { API_URL } from "../../Services/config";
 import { toast } from "react-toastify";
 import { Col, Container, Row } from "react-bootstrap";
 import ic_logo from '../../assets/icons/ic_logo.svg';
-import PhoneInput from "../../Components/CustomPhoneInput/Index";
+import PhoneInputLarge from "../../Components/CustomPhoneInput/IndexLarge";
 
     const initialValues = {
     email: "",
@@ -61,7 +61,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
     };
 
     return (
-    <Container fluid className="p-0 overflow-auto">
+    <Container fluid className="p-0 overflow-hidden">
     <RegisterStyledContainer>
     <Row>
     <Col md={5}>
@@ -97,7 +97,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                 <Row>
                   <Col md={12}>
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="location"
                       placeholder="Location Name"
@@ -110,7 +110,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={6} className="login-input-fields-field">
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="first-name"
                       placeholder="First Name"
@@ -123,7 +123,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={6} className="login-input-fields-field">
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="last- name"
                       placeholder="Last Name"
@@ -135,15 +135,15 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                     />
                   </Col>
                   <Col md={6} >
-                    <PhoneInput />
+                    <PhoneInputLarge />
                   </Col>
                   <Col md={6} >
-                    <PhoneInput />
+                    <PhoneInputLarge />
                   </Col>
 
                   <Col md={12} className='mt-2'>
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="email"
                       placeholder="Official Email"
@@ -156,7 +156,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={6} className='mt-2'>
                     <FormControl
-                      control="select"
+                      control="largeSelect"
                       type="text"
                       name="state"
                       label='State'
@@ -170,7 +170,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={6} className='mt-2'>
                     <FormControl
-                      control="select"
+                      control="largeSelect"
                       name="city"
                       label='City'
                       placeholder="Enter City"
@@ -184,7 +184,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={12} className='mt-3'>
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="address"
                       placeholder="Address"
@@ -197,7 +197,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={12}>
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="social-page"
                       placeholder="Facebook Page / Company Website"
@@ -208,21 +208,21 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                       }
                     />
                   </Col>
-                  <Row>
+                  <Row className="mt-3 ownership">
                     <h5 className="ownership-heading">Are you the owner or manager of this place? *</h5>
-                    <Col md={6}>
-                      <Checkbox onChange={onChange}>I'm not the owner/manager</Checkbox>
+                    <Col md={6} className='mt-2'>
+                      <Checkbox className="ownership-checkbox" onChange={onChange}>I'm not the owner/manager</Checkbox>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className='mt-2'>
                       <Checkbox onChange={onChange}>I'm the owner/manager</Checkbox>
                     </Col>
                   </Row>
                   <Col md={12} className='mt-3'>
                     <FormControl
-                      control="multiSelect"
+                      control="multilargeSelect"
                       type="text"
                       name="business-catagory"
-                      placeholder="Select Contact"
+                      placeholder="largeSelect Contact"
                       defaultValue={['a10', 'c12']}
                       label="Business Category"
                       className={
@@ -235,7 +235,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={12} className='mt-2'>
                     <FormControl
-                      control="select"
+                      control="largeSelect"
                       name="sole"
                       label='Business Type'
                       placeholder="Sole Proprietorship"
@@ -249,7 +249,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={12} className='mt-2'>
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="text"
                       name="company-name"
                       placeholder="Company Name (SSM)"
@@ -262,7 +262,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={12} className='mt-2'>
                     <FormControl
-                      control="input"
+                      control="largeInput"
                       type="number"
                       name="company-register-number"
                       placeholder="Company Registration Number (SSM)"
@@ -275,7 +275,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={6} className='mt-2'>
                     <FormControl
-                      control="select"
+                      control="largeSelect"
                       name="sole"
                       label='Business Type'
                       placeholder="Sole Proprietorship"
@@ -289,7 +289,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={6} className='mt-2'>
                     <FormControl
-                      control="select"
+                      control="largeSelect"
                       name="house-delivery"
                       label='House delivery services?'
                       placeholder="yes"
@@ -303,7 +303,7 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
                   </Col>
                   <Col md={12} className='mt-2'>
                     <FormControl
-                      control="select"
+                      control="largeSelect"
                       name="sole"
                       label='Opening status'
                       placeholder="This place is already open"
@@ -318,16 +318,27 @@ import PhoneInput from "../../Components/CustomPhoneInput/Index";
 
                   <div className="mt-2">
                     <CustomButton
-                      bgcolor={tertiaryGrey3}
+                      bgcolor={tertiaryGrey5}
                       color={secondaryDark3}
-                      padding="11px 8px"
+                      padding="15px 8px"
                       width="100%"
                       type="submit"
                       title="+Add more info"
+                      fontSize='18px'
                     />
                     </div>
-
-                    <p className="terms text-center">I agree that you can collect, use and disclose the information provided by me in accordance with your <span style={{ color: `${PrimaryColor}` }}>Privacy Policy</span> which I have read and understand</p>
+                  <div className="mt-4">
+                    <CustomButton
+                      bgcolor={PrimaryColor}
+                      color='white'
+                      padding="15px 8px"
+                      width="100%"
+                      type="submit"
+                      title="SUBMIT"
+                      fontSize='24px'
+                      />
+                      </div>
+                    <p className="terms text-center mt-3">I agree that you can collect, use and disclose the information provided by me in accordance with your <span style={{ color: `${PrimaryColor}` }}>Privacy Policy</span> which I have read and understand</p>
                 </Row>
               </Form>
             );

@@ -9,7 +9,8 @@ import InputNumber from './CustomInputNumber';
 import PasswordInput from './CustomPasswordInput/Index';
 import CustomSearchSelect from './CustomSearchSelect';
 import CustomMultiSelect from './CustomMultiSelect/Index';
-import CustomLoginInput  from "./CustomLoginInput/Index";
+import CustomLargeInput  from "./CustomLargeInput/Index";
+import CustomLargeSelect  from "./CustomLargeSelect/Index";
 
 const Formickcontroller = (props) => {
   const { control, ...rest } = props;
@@ -30,8 +31,10 @@ const Formickcontroller = (props) => {
       return <Textarea {...rest} />;
     case 'inputNumber':
       return <InputNumber  {...rest} />
-      case 'loginInput':
-      return <CustomLoginInput  {...rest} />
+      case 'largeInput':
+      return <CustomLargeInput  {...rest} />
+      case 'largeSelect':
+        return <CustomLargeSelect  {...rest} />
     // case "radio":
     //   return <Radio {...rest} />;
     case "date":

@@ -36,7 +36,23 @@ color: ${pureDark};
 font-size: 18px;
 font-weight:700;
 }
+
+.ownership{
+&-heading{
+font-size: 22px;
+font-weight:700;
+}
+
+.ant-checkbox-wrapper{
+font-size: 19px;
+font-weight: 700;
+
+}
 }  
+.terms{
+font-size: 15px;
+}
+}
 
 
 `;

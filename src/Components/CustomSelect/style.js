@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const CustomSelectContainer = styled.div`
- margin-bottom: 10px;
- width: 100%;
+margin-bottom: 10px;
+width: 100%;
 
 /* 
   .custom-select-inner{
@@ -32,12 +32,12 @@ export const CustomSelectContainer = styled.div`
   }
 
   .ant-select{
-        background: white;
-       border: 0.5px solid #D6D6E0;
-       border-radius: 3px;
-       /* height: 48px; */
-       padding: 4px;
-       width: 100%;
+      background: white;
+      border: 0.5px solid #D6D6E0;
+      border-radius: 3px;
+      /* height: 48px; */
+      padding: 4px;
+      width: 100%;
     }
     .ant-select-selector{
       /* height: 47px !important; */

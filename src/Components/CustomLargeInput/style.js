@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CustomLoginInputStyled = styled.div`
+export const CustomlargeInputStyled = styled.div`
   width: 100%;
   margin-bottom: 10px;
 

@@ -89,7 +89,7 @@ return (
                             <Col md={12}>
                             <div className="password-input position-relative">
                                     <FormControl
-                                    control="loginInput"
+                                    control="largeInput"
                                     type="password"
                                     name="password"
                                     placeholder="Enter Password"
@@ -105,7 +105,7 @@ return (
                             <Col md={12}>
                             <div className="password-input position-relative">
                                     <FormControl
-                                    control="loginInput"
+                                    control="largeInput"
                                     type="password"
                                     name="password"
                                     placeholder="Enter Password"

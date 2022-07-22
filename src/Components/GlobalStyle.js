@@ -16,6 +16,8 @@ export const tertiaryGrey = '#808896';
 export const tertiaryGrey2='#80808F';
 export const tertiaryGrey3='#B5B5C3';
 export const tertiaryGrey4='#AEAEB2';
+export const tertiaryGrey5='#E5E5EA';
+
 export const tertiaryGrewish='#C6C6C8';
 
 export const FlexContainer = styled.div`

@@ -98,7 +98,7 @@ return (
                                     <div className="mt-3">
                                     <Col md={12}>
                                     <FormControl
-                                    control="loginInput"
+                                    control="largeInput"
                                     type="text"
                                     name="email"
                                     placeholder="Enter Email Address"
@@ -113,7 +113,7 @@ return (
                                     <Col md={12}>
                                     <div className="password-input position-relative">
                                     <FormControl
-                                    control="loginInput"
+                                    control="largeInput"
                                     type="password"
                                     name="password"
                                     placeholder="Enter Password"
