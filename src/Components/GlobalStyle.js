@@ -17,6 +17,8 @@ export const tertiaryGrey2='#80808F';
 export const tertiaryGrey3='#B5B5C3';
 export const tertiaryGrey4='#AEAEB2';
 export const tertiaryGrey5='#E5E5EA';
+export const tertiaryGrey6='#D6D6E0';
+
 
 export const tertiaryGrewish='#C6C6C8';
 
