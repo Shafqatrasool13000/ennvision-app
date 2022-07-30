@@ -133,26 +133,26 @@ return (
                                     <CustomButton
                                     bgcolor={PrimaryColor}
                                     color='white'
-                                    padding="20px 8px"
-                                    width='142px'
-                                    height='67px'
+                                    padding="20 8"
+                                    width='142'
+                                    height='67'
                                     type="submit"
                                     title="SIGN IN"
-                                    fontSize='24px'
+                                    fontSize='24'
                                     />
                                     </div>
-                                    <div className="ms-3 position-relative sign-google-btn d-flex align-items-center">
+                                    <div className=" ms-lg-3  ms-sm-5 ms-5 position-relative sign-google-btn d-flex align-items-center">
                                     <img src={googleImg} alt="google-img" className="position-absolute" />
                                     <div className="button">
                                     <CustomButton
                                     bgcolor={lightGrey2}
                                     color={PrimaryColor}
-                                    padding="20px 8px"
-                                    width='323px'
-                                    height='62px'
+                                    padding="20 8"
+                                    width='323'
+                                    height='62'
                                     type="submit"
                                     title="SIGN IN WITH GOOGLE"
-                                    fontSize='21px'
+                                    fontSize='21'
                                     />
                                     </div>
                                     </div>

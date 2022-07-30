@@ -123,11 +123,11 @@ return (
                             <CustomButton
                                 bgcolor={PrimaryColor}
                                 color='white'
-                                padding="15px 8px"
+                                padding="15 8"
                                 width="100%"
                                 type="submit"
                                 title="SIGN IN"
-                                fontSize='24px'
+                                fontSize='24'
                                 clicked={moveToLogin}
                             />
                             </div>

@@ -58,4 +58,32 @@ font-size: 19px;
 letter-spacing: .5px;
 }
 }
+@media screen and (max-width:1400px) {
+input{
+padding: 10px;
+&::placeholder{
+font-size: 14px;
+}
+}
+.ant-input-affix-wrapper{
+padding: 10px;
+&::placeholder{
+font-size: 14px;
+}
+}
+}
+@media screen and (max-width:1024px) {
+input{
+padding: 8px;
+&::placeholder{
+font-size: 13px;
+}
+}
+.ant-input-affix-wrapper{
+padding: 8px;
+&::placeholder{
+font-size: 13px;
+}
+}
+}
 `

@@ -1,7 +1,7 @@
 import React , {useState} from "react";
 import { EmailTemplateContainer } from "./style";
 import ic_logo_pdf from "../../Assets/icons/ic_logo_pdf.svg";
-import FormControl from "../../Components/FormControl";
+import FormControl from "../FormControl";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import { Form, Modal } from "antd";
@@ -9,7 +9,7 @@ import { useMutation } from "react-query";
 import CustomButton from "../CustomButton/Index";
 import { API_URL, EMAIL_SEND } from "../../Services/config";
 import axios from "axios";
-import SuccessfullModal from "../../Components/Delete/SuccessfullModal";
+import SuccessfullModal from "../Delete/SuccessfullModal";
 
 const initialValues = {
   to: "",

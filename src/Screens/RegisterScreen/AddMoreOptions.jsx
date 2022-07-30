@@ -151,15 +151,15 @@ const AddMoreOptions = () => {
                                 options={[{ key: 'city 1', value: 'city1' }, { key: 'city 2', value: 'city2' }]}
                             />
                         </Col>
-                        <Col md={4} className='add-time-btn'>
+                        <Col md={4} className='add-time-btn' >
                             <CustomButton
                                 bgcolor={PrimaryColor}
                                 color='white'
-                                padding="14px 8px"
+                                padding="14 8"
                                 width="100%"
                                 type="submit"
                                 title="ADD TIME"
-                                fontSize='24px'
+                                fontSize='20'
                             />
 
                         </Col>
@@ -168,12 +168,12 @@ const AddMoreOptions = () => {
                 <div className="timing-details-list">
                     {
                         ['monday','tuesday','wenesday','thursday'].map((title,index)=>(
-                            <div key={index} className='mt-1 d-flex justify-content-between timing-details-list-single-day align-items-center'>
+                            <div key={index} className=' timing-details-list-single-day align-items-center'>
                             <p className="name fw-bold fs-6 text-captilize">{title}</p>
                             <p className="time">12:00AM</p>
                             <p className="time">09:00PM</p>
                             <p className="mark-close">Mark day as read</p>
-                                <img src={deleteImg} alt="delee" />
+                                <img src={deleteImg} alt="delee" className='ms-2'/>
                             {/* <p className="start-time"></p>
                     <p className="day-name"></p> */}
                         </div>

@@ -5,7 +5,7 @@ import banner from '../../assets/icons/ic_side_banner.svg'
 export const ForgetPasswordStyled = styled.div`
 .left-side-img{
 background-image:url(${banner});
-background-size: cover;
+background-size: contain;
 height: 100vh;
 background-repeat: no-repeat;
 }
@@ -26,7 +26,7 @@ height: 66px;
 font-size: 26px;
 color: ${PrimaryColor};
 font-weight: 700;
-margin-top: 24px;
+margin-top: 44px;
 line-height: 30px;
 letter-spacing: 1px;
 }  
@@ -34,6 +34,9 @@ letter-spacing: 1px;
 color: ${pureDark};
 font-size: 18px;
 font-weight:700;
+}
+.mini-heading{
+font-size: 16px;
 }
 
 .forget-footer{
@@ -44,9 +47,44 @@ cursor: pointer;
 font-size: 18px;
 }
 }
-
 }  
+@media screen and (max-width:1400px) {
+.left-side-img{
+background-size: cover;
+}
+.right-side{
+max-width: 475px;
+.img-logo{
+img{
+width: 270px;
+}
+}
+.main-heading{
+font-size: 26px;
+margin-top: 28px;
+line-height: 27px;
+}
+}
+}
+@media screen and (max-width:1024px) {
+.right-side{
+    max-width: 375px;
 
+.img-logo{
+img{
+width: 230px;
+}
+}
+.main-heading{
+font-size: 22px;
+margin-top: 23px;
+line-height: 24px;
+}
+.mini-heading{
+font-size: 14px;
+}
+}
 
+}
 `;
 

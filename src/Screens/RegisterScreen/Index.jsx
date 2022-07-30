@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import { Checkbox, Form } from "antd";
+import { Checkbox, Form, InputNumber } from "antd";
 import { RegisterStyledContainer } from "./style";
 import FormControl from "../../Components/FormControl";
 import CustomButton from "../../Components/CustomButton/Index";
@@ -14,7 +14,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import ic_logo from '../../assets/icons/ic_logo.svg';
 import PhoneInputLarge from "../../Components/CustomPhoneInput/IndexLarge";
 import AddMoreOptions from "./AddMoreOptions";
-
+import flag from '../../assets/icons/ic_flag.svg';
 const initialValues = {
   email: "",
   password: "",
@@ -138,10 +138,16 @@ const Index = ({ logIn }) => {
                             />
                           </Col>
                           <Col md={6} >
-                            <PhoneInputLarge />
+                          <InputNumber addonBefore={<div style={{width:'40px',height:"20px"}} className="d-flex align-items-center">
+                            <img src={flag} alt="flag" className="me-2"/>
+                            <h6 className="m-0 fw-bold">+1</h6>
+                          </div>} className="phone-input py-2 w-100" controls={false}  />
                           </Col>
                           <Col md={6} >
-                            <PhoneInputLarge />
+                          <InputNumber addonBefore={<div style={{width:'40px'}} className="d-flex align-items-center">
+                            <img src={flag} alt="flag" className="me-2"/>
+                            <h6 className="m-0 fw-bold">+1</h6>
+                          </div>} className="phone-input py-2 w-100" controls={false}  />
                           </Col>
 
                           <Col md={12} className='mt-2'>
@@ -169,11 +175,13 @@ const Index = ({ logIn }) => {
                                   ? "is-invalid"
                                   : "customInput"
                               }
+                              options={[{id:"0",name:'Washington'},{id:"1",name:'Calfornia'}]}
                             />
                           </Col>
                           <Col md={6} className='mt-2'>
                             <FormControl
                               control="largeSelect"
+                              type="text"
                               name="city"
                               label='City'
                               placeholder="Enter City"
@@ -182,7 +190,7 @@ const Index = ({ logIn }) => {
                                   ? "is-invalid"
                                   : "customInput"
                               }
-                              options={[{ key: 'city 1', value: 'city1' }, { key: 'city 2', value: 'city2' }]}
+                              options={[{id:"0",name:'City 1'},{id:"1",name:'City 2'},]}
                             />
                           </Col>
                           <Col md={12} className='mt-3'>
@@ -247,7 +255,7 @@ const Index = ({ logIn }) => {
                                   ? "is-invalid"
                                   : "customInput"
                               }
-                              options={[{ key: 'city 1', value: 'city1' }, { key: 'city 2', value: 'city2' }]}
+                              options={[{ id: '0', name: 'yes' }, { id: '1', name: 'No' }]}
                             />
                           </Col>
                           <Col md={12} className='mt-2'>
@@ -287,7 +295,7 @@ const Index = ({ logIn }) => {
                                   ? "is-invalid"
                                   : "customInput"
                               }
-                              options={[{ key: 'city 1', value: 'city1' }, { key: 'city 2', value: 'city2' }]}
+                              options={[{ id: '0', name: 'yes' }, { id: '1', name: 'No' }]}
                             />
                           </Col>
                           <Col md={6} className='mt-2'>
@@ -301,7 +309,7 @@ const Index = ({ logIn }) => {
                                   ? "is-invalid"
                                   : "customInput"
                               }
-                              options={[{ key: 'city 1', value: 'city1' }, { key: 'city 2', value: 'city2' }]}
+                              options={[{ id: '0', name: 'yes' }, { id: '1', name: 'No' }]}
                             />
                           </Col>
                           <Col md={12} className='mt-2'>
@@ -315,7 +323,7 @@ const Index = ({ logIn }) => {
                                   ? "is-invalid"
                                   : "customInput"
                               }
-                              options={[{ key: 'city 1', value: 'city1' }, { key: 'city 2', value: 'city2' }]}
+                              options={[{ id: '0', name: 'Urgent' }, { id: '1', name: 'Late' }]}
                             />
                           </Col>
 
@@ -323,11 +331,11 @@ const Index = ({ logIn }) => {
                             <CustomButton
                               bgcolor={tertiaryGrey5}
                               color={secondaryDark3}
-                              padding="15px 8px"
+                              padding="15 8"
                               width="100%"
                               type="submit"
                               title="+Add more info"
-                              fontSize='18px'
+                              fontSize='18'
                               clicked={() => setShowMore(!showMore)}
                             />
                           </div>
@@ -338,11 +346,11 @@ const Index = ({ logIn }) => {
                             <CustomButton
                               bgcolor={PrimaryColor}
                               color='white'
-                              padding="15px 8px"
+                              padding="15 8"
                               width="100%"
                               type="submit"
                               title="SUBMIT"
-                              fontSize='24px'
+                              fontSize='24'
                             />
                           </div>
                           <p className="terms text-center mt-3">I agree that you can collect, use and disclose the information provided by me in accordance with your <span style={{ color: `${PrimaryColor}` }}>Privacy Policy</span> which I have read and understand</p>

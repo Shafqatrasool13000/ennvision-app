@@ -17,7 +17,7 @@ const Index = () => {
                     value={value}
                     placeholder='(617) 397 - 8483'
                     onChange={(v) => {
-                        setValue(v);
+                    setValue(v);
                     }}
                     className="your-custom-class w-100"
                 />

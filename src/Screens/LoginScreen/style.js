@@ -5,7 +5,7 @@ import banner from '../../assets/icons/ic_side_banner.svg'
 export const LoginStyledContainer = styled.div`
 .left-side-img{
 background-image:url(${banner});
-background-size: cover;
+background-size: contain;
 height: 100vh;
 background-repeat: no-repeat;
 }
@@ -23,6 +23,7 @@ width: 332px;
 height: 66px;
 }
 }
+
 .main-heading{
 font-size: 36px;
 color: ${secondaryDark3};
@@ -88,5 +89,74 @@ cursor: pointer;
 font-size: 18px;
 }
 } 
+@media screen and (max-width:1400px) {
+.left-side-img{
+background-size: cover;
+}
+.right-side{
+max-width: 420px;
+.img-logo{
+img{
+width: 270px;
+}
+}
+.forget-password{
+font-size: 16px;
+} 
+.main-heading{
+font-size: 30px;
+margin-top: 24px;
+line-height: 27px;
+}
+.sign-google-btn{
+img{
+width: ${26*.7}px !important;
+}
+}
+}
+.login-footer{
+p{
+font-size: ${18*.8}px;
+}
+}
+.password-input{
+h6{
+font-size: 16px;
+}
+} 
+}
+@media screen and (max-width:1024px) {
+.right-side{
+max-width: 350px;
 
+.img-logo{
+img{
+width: 230px;
+}
+}
+.sign-google-btn{
+img{
+width: ${26*.5}px !important;
+}
+}
+.forget-password{
+font-size: 14px;
+} 
+.main-heading{
+font-size: 26px;
+margin-top: 22px;
+line-height: 24px;
+}
+.password-input{
+h6{
+font-size: 14px;
+}
+} 
+}
+.login-footer{
+p{
+font-size: ${18*.7}px;
+}
+} 
+}
 `;
