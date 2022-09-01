@@ -12,7 +12,8 @@ import { API_URL } from "../../Services/config";
 import { toast } from "react-toastify";
 import { Col, Container, Row } from "react-bootstrap";
 import ic_logo from '../../assets/icons/ic_logo.svg';
-import googleImg from '../../assets/icons/ic_gmail.svg'
+import googleImg from '../../assets/icons/ic_gmail.svg';
+import SocialFooter from '../../Components/SocialFooter/SocialFooter';
 
 const initialValues = {
 email: "",
@@ -63,6 +64,7 @@ const moveToForgetPassword=()=>{
 
 return (
 <LoginStyledContainer>
+    <SocialFooter/>
 <Container fluid className="p-0 overflow-hidden">
 <Row>
     <Col sm={3} md={4} lg={5}  >

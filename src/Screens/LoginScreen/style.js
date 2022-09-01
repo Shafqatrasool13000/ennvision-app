@@ -110,13 +110,13 @@ line-height: 27px;
 }
 .sign-google-btn{
 img{
-width: ${26*.7}px !important;
+width: 22px !important;
 }
 }
 }
 .login-footer{
 p{
-font-size: ${18*.8}px;
+font-size: 16px;
 }
 }
 .password-input{
@@ -136,7 +136,7 @@ width: 230px;
 }
 .sign-google-btn{
 img{
-width: ${26*.5}px !important;
+width: 19px !important;
 }
 }
 .forget-password{
@@ -155,7 +155,7 @@ font-size: 14px;
 }
 .login-footer{
 p{
-font-size: ${18*.7}px;
+font-size: 16px;
 }
 } 
 }
