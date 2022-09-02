@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { secondaryDark3, whiteColor } from "../GlobalStyle";
 
 
-export const StyledContainer=styled.div`
+export const StyledContainer = styled.div`
 background: ${whiteColor};
-display: flex;
-justify-content: end;
-align-items: center;
-padding: 16px 0;
+padding: 4px 0;
+img{
+cursor: pointer;
+}
+.right-side{
 .name{
 margin-bottom:0;
 color: ${secondaryDark3};
@@ -16,5 +17,5 @@ font-size: 14px;
 img{
 margin-left: 8px;
 }
-
+}
 `

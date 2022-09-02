@@ -5,7 +5,7 @@ import FormControl from "../../Components/FormControl";
 import CustomButton from "../../Components/CustomButton/Index";
 import { LoginContainer } from "./style";
 import ic_logo from "../../assets/icons/ic_logo(1).svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { tertiaryGrey11 } from "../../Components/GlobalStyle";
 import Navbar from '../../Components/Navbar/Index'
 import SocialFooter from '../../Components/SocialFooter/SocialFooter';
@@ -25,8 +25,14 @@ const validationSchema = Yup.object({
 });
 
 const Index = () => {
+  const navigate=useNavigate();
+  
   const onSubmit = (value) => {
   };
+
+  const navigateToDashboard=()=>{
+    navigate('/dashboard');
+  }
 
   return (
     <>
@@ -100,6 +106,7 @@ const Index = () => {
                       width="100%"
                       type="submit"
                       title="LOG IN"
+                      clicked={navigateToDashboard}
                     />
                   </div>
                 </Form>

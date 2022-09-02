@@ -14,6 +14,8 @@ export const tertiaryDark = '#1A1B1E';
 export const lightGrey = '#909090';
 export const lightGrey2 = '#EFEFF4';
 export const lightGrey3 = '#707070';
+export const lightGrey4 = '#888C9F';
+export const lightGrey5 = '#EEF0F8';
 
 export const tertiaryGrey = '#808896';
 export const tertiaryGrey2='#80808F';
@@ -48,7 +50,6 @@ height: auto;
 `
 export const TertiaryHeading = styled.h3`
 font-size: 24px;
-font-weight: 700;
 line-height: 29px;
 letter-spacing: 0em;
 color:#1A1B1E ; 
@@ -56,6 +57,15 @@ color:#1A1B1E ;
 font-size: 19px;
 line-height: 21px;
 font-weight: bold;
+}
+`
+export const TertiaryHeadingMini = styled.h3`
+font-size: 20px;
+color:${PrimaryColor} ; 
+font-family: 'EnnVisionsMedium';
+@media screen and (max-width:480px) {
+/* font-size: 19px;
+line-height: 21px; */
 }
 `
 export const InputErrorMessage = styled.div`
