@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { secondaryDark3, whiteColor } from "../GlobalStyle";
 
 
-export const StyledContainer = styled.div`
+export const NavbarStyled = styled.div`
 background: ${whiteColor};
 padding: 4px 0;
 img{

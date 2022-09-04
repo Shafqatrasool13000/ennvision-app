@@ -1,8 +1,8 @@
 import React from 'react';
-import { SidebarStyled } from './style';
-import expandIcon from '../../assets/icons/ic_blog_detail_arrow.svg';
 import { useContext } from 'react';
+import expandIcon from '../../assets/icons/ic_blog_detail_arrow.svg';
 import { SidebarContext } from '../../App';
+import { SidebarStyled } from './Style';
 
 const Sidebar = () => {
 

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Table, Space, Rate } from "antd";
-import StyleEstimates, { AdminsTableStyled } from "./style";
+import  { UserList } from "./style";
 import CustomButton from "../../Components/CustomButton/Index";
-import { BasicColor, secondaryGreen } from "../../Components/GlobalStyle";
+import {secondaryGreen } from "../../Components/GlobalStyle";
 import deleteIcon from "../../assets/icons/ic_delete.svg";
 import editIcon from "../../assets/icons/ic_edit.svg";
 import MobileTable from "./MobileTable";
@@ -16,7 +16,7 @@ const columns = [
     dataIndex: "id",
     key: "id",
     render: (text, record) => (
-      <Link className="table-link" to={`/estimates/${record.id}`}> {text} </Link>
+      <Link className="table-link" to={`/estimates/${record.id}`}> {text+1} </Link>
     ),
   },
   {
@@ -24,9 +24,9 @@ const columns = [
     dataIndex: "fullName",
     key: "fullName",
     render: ({name,img}, record) => (
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex align-items-center">
           <img src={avatar} alt="avatar" />
-      <Link to={`/estimates/${record.id}`}>
+      <Link className="ms-3" to={`/estimates/${record.id}`}>
         {name}
       </Link>
         </div>
@@ -352,7 +352,7 @@ const Index = () => {
       </div>
       <div className="d-none d-md-block">
         <Container>
-          <AdminsTableStyled>
+          <UserList>
             {/* <div className="btn">
               <CustomButton
                 bgcolor={BasicColor}
@@ -364,11 +364,13 @@ const Index = () => {
               />
             </div> */}
             <Table
-              scroll={{
-                y: '60vh'
-              }}
-              pagination={true}
+             
+              pagination={{pageSize:21}}
               columns={columns}
+scroll={{
+                x:'auto',
+                y:'70vh'
+              }}
               dataSource={[...adminsData.map(({fullName,createdAt,email,phone},index)=>(
                   {
                     id: index,
@@ -379,7 +381,7 @@ const Index = () => {
                   }
               ))]}
             />
-          </AdminsTableStyled>
+          </UserList>
         </Container>
 
       </div>

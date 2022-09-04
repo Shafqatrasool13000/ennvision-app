@@ -10,6 +10,8 @@ import { tertiaryGrey11 } from "../../Components/GlobalStyle";
 import Navbar from '../../Components/Navbar/Index'
 import SocialFooter from '../../Components/SocialFooter/SocialFooter';
 import { Helmet } from "react-helmet";
+import scroll_up from '../../assets/icons/ic_scroll_to_top .svg';
+
 
 let initialValues = {
   email: "",
@@ -39,8 +41,11 @@ const Index = () => {
     <Helmet>
       <title>Login</title>
     </Helmet>
+    <span className='arrow-box'>
+        <img src={scroll_up} alt="scroll-up" />
+      </span>
     <LoginContainer>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="login-container-card">
         <div className="login-container-card-logo">
           <img src={ic_logo} alt="ic_logo" className="logo" />

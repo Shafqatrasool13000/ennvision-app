@@ -1,29 +1,6 @@
 import styled from 'styled-components';
 import { lightGrey4, secondaryDark3, whiteColor } from '../../Components/GlobalStyle';
 
-export const SidebarStyled = styled.div`
-width: 250px;
-background-color: ${secondaryDark3};
-height: 93vh;
-position: fixed;
-padding: 20px;
-overflow-y: auto;
-z-index: 20;
-
-p{
-color: ${lightGrey4};
-margin: 0;
-}
-.inner-container{
-img{
-cursor: pointer;
-}
-}
-`;
-export const DashboardStyled=styled.div`
-
-`;
-
 export const RoleAndCommisionsSytled=styled.div`
 margin-top: 24px;
 
@@ -41,6 +18,8 @@ background: ${whiteColor};
 box-shadow: 0px 0px 2px #0000001A;
 border-radius: 2px;
 border: none;
+cursor: pointer;
+
 }
 }
 .row:first-child{
@@ -57,6 +36,7 @@ color: ${secondaryDark3};
 font-family: 'EnnVisionsMedium';
 }
 .card{
+cursor: pointer;
 .title{
 font-family:'EnnVisionsMedium';
 font-size: 14px;
@@ -73,6 +53,8 @@ background: ${whiteColor};
 box-shadow: 0px 0px 2px #0000001A;
 border-radius: 2px;
 border: none;
+cursor: pointer;
+
 }
 }
 

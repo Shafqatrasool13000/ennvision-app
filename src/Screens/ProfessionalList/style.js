@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { lightGrey6, lightGrey7, secondaryDark3 } from '../../Components/GlobalStyle';
 
-export const AdminsTableStyled = styled.div`
+export const ProfessionalList = styled.div`
 margin-top: 28px;
 
 .table-link{
@@ -29,7 +29,7 @@ font-size: 14px;
 }
 .ant-table-tbody{
 .ant-table-cell{
-padding: 6px 16px;  
+padding: 3px 16px;  
 &::before{
 height: 0 !important;
 } 
@@ -74,7 +74,6 @@ z-index: 30;
 }
 display: flex;
 justify-content: space-between;
-background-color: #E1E2E2;
 p{
 margin:0;    
 font-size: 16px;
