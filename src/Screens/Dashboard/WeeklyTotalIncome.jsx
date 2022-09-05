@@ -19,6 +19,7 @@ const WeeklyTotalIncome = () => {
     return (
         <WeeklyTotalIncomeStyled>
             <TertiaryHeadingMini>Weekly & Total Income</TertiaryHeadingMini>
+            <div className="red-line"/>
             {
                 [1, 2, 3].map((title, index) => (
                     <Row key={index}>
@@ -54,7 +55,6 @@ const WeeklyTotalIncome = () => {
                     </Row>
                 ))
             }
-
         </WeeklyTotalIncomeStyled>
     )
 }

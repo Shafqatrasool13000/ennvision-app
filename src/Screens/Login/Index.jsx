@@ -7,11 +7,9 @@ import { LoginContainer } from "./style";
 import ic_logo from "../../assets/icons/ic_logo(1).svg";
 import { Link, useNavigate } from "react-router-dom";
 import { tertiaryGrey11 } from "../../Components/GlobalStyle";
-import Navbar from '../../Components/Navbar/Index'
 import SocialFooter from '../../Components/SocialFooter/SocialFooter';
 import { Helmet } from "react-helmet";
 import scroll_up from '../../assets/icons/ic_scroll_to_top .svg';
-
 
 let initialValues = {
   email: "",
@@ -28,7 +26,6 @@ const validationSchema = Yup.object({
 
 const Index = () => {
   const navigate=useNavigate();
-  
   const onSubmit = (value) => {
   };
 
@@ -121,7 +118,7 @@ const Index = () => {
           <div className="login-container-bottom mt-3">
         <p> Don't have an account ?</p>
         <h6 className="ms-1"> 
-          <Link to="/signup">
+          <Link to="/home">
           Sign Up
           </Link>
         </h6>

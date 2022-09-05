@@ -10,7 +10,7 @@ export const LoginContainer = styled.div`
   margin:0 auto;
   .login-container {
     &-card {
-      max-width: 372px;
+      max-width: 400px;
       display: flex;
       flex-direction: column;
       align-items: center;

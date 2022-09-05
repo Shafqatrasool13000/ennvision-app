@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { lightGrey4, secondaryDark3 } from "../GlobalStyle";
 
 export const SidebarStyled = styled.div`
-margin-top: 60px;
 width: 250px;
 background-color: ${secondaryDark3};
 height: 93vh;

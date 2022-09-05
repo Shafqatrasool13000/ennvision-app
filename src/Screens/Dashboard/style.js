@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { lightGrey4, secondaryDark3, whiteColor } from '../../Components/GlobalStyle';
+import { lightGrey4, PrimaryColor, secondaryDark3, whiteColor } from '../../Components/GlobalStyle';
 
 export const RoleAndCommisionsSytled=styled.div`
 margin-top: 24px;
@@ -28,6 +28,11 @@ margin-top: 12px;
 
 `;
 export const WeeklyTotalIncomeStyled=styled.div`
+.red-line{
+height: 2px;
+background-color: ${PrimaryColor};
+max-width: 120px;
+}
 margin-top: 24px;
 p{
 font-size: 12px;
