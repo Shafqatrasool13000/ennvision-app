@@ -12,15 +12,18 @@ import RequestList from './Screens/RequestList/Index';
 import StoryList from './Screens/StoryList/Index';
 import PostList from './Screens/PostList/Index';
 import Home from './Screens/Home/Index';
+import UserProfile from './Screens/UserProfile/Index';
+import ProfessionalProfile from './Screens/ProfessionalProfile/Index';
+import ProtectedRoute from "./PrivateRoute";
 
 export const SidebarContext = createContext();
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [isLoggedIn, setisLoggedIn] = useState(null);
+  const [isLoggedIn, setisLoggedIn] = useState(true);
 
   const logIn = () => {
-    setisLoggedIn(true);
+    setisLoggedIn(!isLoggedIn);
   };
 
   const clearCacheData = () => {
@@ -37,18 +40,27 @@ function App() {
 
   return (
     <SidebarContext.Provider value={{ showSidebar, setShowSidebar }}>
+      {/* <Button onClick={logIn
+      } variant="primary">{isLoggedIn?'Logout':'Login'}</Button> */}
       <ToastContainer />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home logIn={logIn} />}>
-          <Route index element={<Dashboard logIn={logIn} />} />
-          <Route path="user-list" element={<UserList logIn={logIn} />} />
-          <Route path="professional-list" element={<ProfessionalList logIn={logIn} />} />
-          <Route path="property-list" element={<PropertyList logIn={logIn} />} />
-          <Route path="post-list" element={<PostList logIn={logIn} />} />
-          <Route path="story-list" element={<StoryList logIn={logIn} />} />
-          <Route path="request-list" element={<RequestList logIn={logIn} />} />
-          <Route path="newsfeed-list" element={<NewsfeedList logIn={logIn} />} />
+        <Route path="/" element={
+          <ProtectedRoute isLoggedIn={isLoggedIn}>
+            <Home />
+          </ProtectedRoute>
+        }>
+          <Route index element={<Dashboard />} />
+          <Route path="user-list" element={<UserList />} />
+          <Route path="professional-list" element={<ProfessionalList />} />
+          <Route path="property-list" element={
+            <PropertyList />} />
+          <Route path="post-list" element={<PostList />} />
+          <Route path="story-list" element={<StoryList />} />
+          <Route path="request-list" element={<RequestList />} />
+          <Route path="newsfeed-list" element={<NewsfeedList />} />
+          <Route path="user-profile" element={<UserProfile />} />
+          <Route path="professional-profile" element={<ProfessionalProfile />} />
         </Route>
         <Route path="*" element={<h3>Page not Found</h3>} />
       </Routes>

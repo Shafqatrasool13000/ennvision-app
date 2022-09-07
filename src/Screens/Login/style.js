@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BasicColor, tertiaryGrey10, tertiaryGrey12, tertiaryGrey9 } from "../../Components/GlobalStyle";
+import { BasicColor, tertiaryGrey12, tertiaryGrey9 } from "../../Components/GlobalStyle";
 
 export const LoginContainer = styled.div`
   display: flex;
@@ -8,6 +8,7 @@ export const LoginContainer = styled.div`
   height: 100vh;
   background: ${tertiaryGrey9};
   margin:0 auto;
+  
   .login-container {
     &-card {
       max-width: 400px;
