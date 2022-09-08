@@ -20,6 +20,7 @@ export const lightGrey4 = '#888C9F';
 export const lightGrey5 = '#EEF0F8';
 export const lightGrey6 = '#F3F6F9';
 export const lightGrey7 = '#464E5F';
+export const lightGrey8 = '#E9E9E9';
 
 export const secondaryGreen='#32D74B';
 export const greenishColor='#34C759';

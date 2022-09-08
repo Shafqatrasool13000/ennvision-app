@@ -15,6 +15,7 @@ import Home from './Screens/Home/Index';
 import UserProfile from './Screens/UserProfile/Index';
 import ProfessionalProfile from './Screens/ProfessionalProfile/Index';
 import ProtectedRoute from "./PrivateRoute";
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 export const SidebarContext = createContext();
 

@@ -5,7 +5,7 @@ import ViewMore from '../../Components/ViewMoreProperties/Index';
 const Index = ({title,listing}) => {
   return (
     <>
-        <div className='d-flex justify-content-between align-items-center'>
+        <div className='d-flex justify-content-between align-items-center flex-wrap'>
           <div className="d-flex flex-column">
             <TertiraryHeading>{title}</TertiraryHeading>
             <div>
