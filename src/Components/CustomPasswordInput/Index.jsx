@@ -6,22 +6,23 @@ import { Input } from "antd";
 import { InputStyleContainer } from "./Style";
 
 const PasswordField = (props) => {
-  const { label,className, placeholder, name, ...rest } = props;
+  const { label,className, placeholder,border=null, name, ...rest } = props;
   return (
     <InputStyleContainer>
       {/* <label htmlFor={name}>{label}</label> */}
       <Field name={name} id={name}>
         {({ field, form, meta }) => (
           <Input.Password
+          style={{border}}
             className={className}
             {...rest}
             placeholder={placeholder}
             {...field}
             iconRender={(visible) =>
               visible ? (
-                <span className="paswordIconLabel">Hide</span>
+                <span className="hide-label">Hide</span>
               ) : (
-                <span className="paswordIconLabel">Show</span>
+                <span className="show-label">Show</span>
               )
             }
           />

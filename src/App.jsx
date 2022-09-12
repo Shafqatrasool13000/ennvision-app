@@ -13,9 +13,17 @@ import StoryList from './Screens/StoryList/Index';
 import PostList from './Screens/PostList/Index';
 import Home from './Screens/Home/Index';
 import UserProfile from './Screens/UserProfile/Index';
-import ProfessionalProfile from './Screens/ProfessionalProfile/Index';
+import BecomeProfessional from './Screens/BecomeProfessional/Index';
 import ProtectedRoute from "./PrivateRoute";
 import 'react-alice-carousel/lib/alice-carousel.css';
+import Confirmed from './Screens/Confirmed/Index';
+import CreateUser from './Screens/CreateUser/Index';
+import EditUser from './Screens/EditUser/Index';
+import CreateProfessional from './Screens/CreateProfessional/Index';
+import Confirmaton from './Screens/Confirmation/Index';
+import VerifyOtp from './Screens/VerifyOtp/Index';
+import ProfessionalProfile from './Screens/ProfessionalProfile/Index';
+import BecomePro2 from './Screens/BecomeProfessional/BecomePro2';
 
 export const SidebarContext = createContext();
 
@@ -62,6 +70,14 @@ function App() {
           <Route path="newsfeed-list" element={<NewsfeedList />} />
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="professional-profile" element={<ProfessionalProfile />} />
+          <Route path="create-user" element={<CreateUser />} />
+          <Route path="edit-user" element={<EditUser />} />
+          <Route path="creat-professional" element={<CreateProfessional />} />
+          <Route path="confirmed" element={<Confirmed />} />
+          <Route path="confirmation" element={<Confirmaton />} />
+          <Route path="verify-otp" element={<VerifyOtp />} />
+          <Route path="become-professional" element={<BecomeProfessional />} />
+          <Route path="become-pro2" element={<BecomePro2 />} />
         </Route>
         <Route path="*" element={<h3>Page not Found</h3>} />
       </Routes>

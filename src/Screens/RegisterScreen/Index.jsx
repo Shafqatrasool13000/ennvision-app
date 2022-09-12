@@ -5,14 +5,13 @@ import { Checkbox, Form, InputNumber } from "antd";
 import { RegisterStyledContainer } from "./style";
 import FormControl from "../../Components/FormControl";
 import CustomButton from "../../Components/CustomButton/Index";
-import { PrimaryColor, secondaryDark3, tertiaryGrey3, tertiaryGrey5 } from "../../Components/GlobalStyle";
+import { PrimaryColor, secondaryDark3, tertiaryGrey5 } from "../../Components/GlobalStyle";
 import { useNavigate } from "react-router-dom";
 import GenericService from "../../Services/GenericService";
 import { API_URL } from "../../Services/config";
 import { toast } from "react-toastify";
 import { Col, Container, Row } from "react-bootstrap";
 import ic_logo from '../../assets/icons/ic_logo.svg';
-import PhoneInputLarge from "../../Components/CustomPhoneInput/IndexLarge";
 import AddMoreOptions from "./AddMoreOptions";
 import flag from '../../assets/icons/ic_flag.svg';
 const initialValues = {
@@ -32,10 +31,6 @@ const Index = ({ logIn }) => {
   const [showMore, setShowMore] = useState(false);
   const navigation = useNavigate();
   const genericService = new GenericService();
-
-  const nextScreenHandler = () => {
-    navigation("/signup");
-  };
 
   const onSubmit = (value) => {
     console.log(value, "value");

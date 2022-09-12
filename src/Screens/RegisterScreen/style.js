@@ -27,9 +27,7 @@ img{
 width: 332px;
 }
 }
-.phone-input{
 
-}
 .main-heading{
 font-size: 26px;
 color: ${PrimaryColor};

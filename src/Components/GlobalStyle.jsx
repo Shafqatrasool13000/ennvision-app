@@ -14,6 +14,7 @@ export const secondaryDark5 = '#393939';
 
 export const tertiaryDark = '#1A1B1E';
 export const lightGrey = '#909090';
+export const lightGrey1 = '#212121';
 export const lightGrey2 = '#EFEFF4';
 export const lightGrey3 = '#707070';
 export const lightGrey4 = '#888C9F';
@@ -36,6 +37,7 @@ export const tertiaryGrey9='#FCFBFB';
 export const tertiaryGrey10='#FAFAFA';
 export const tertiaryGrey11='#00B0E9';
 export const tertiaryGrey12='#8E8E93';
+export const tertiaryGrey13='#ECF0F3';
 export const lightblue='#04A4D8';
 
 export const tertiaryGrey7 = '#232837';
@@ -110,15 +112,23 @@ line-height: 21px; */
 `
 export const UnderlineRed=styled.hr`
 border-radius: 4px;
-border-top: 4px solid ${PrimaryColor};
+border-top: 3px solid ${PrimaryColor};
 width: 120px;
+display: inline-block;
+opacity: 1;
+margin-top:0;
+`
+export const UnderlineBlue=styled.hr`
+border-radius: 4px;
+border-top: 3px solid ${lightblue};
+width: 76px;
 display: inline-block;
 opacity: 1;
 margin-top:0;
 `
 export const BlackDot=styled.hr`
 border-radius: 7px;
-border-top:4px solid ${pureDark};
+border-top:3px solid ${pureDark};
 width: 20px;
 margin-left: 6px;
 display: inline-block;
