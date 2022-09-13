@@ -9,7 +9,10 @@ position: fixed;
 padding: 20px;
 overflow-y: auto;
 z-index: 20;
-
+.expand-menu{
+transition: all 1s ease-out;
+transform-origin: top;
+}
 p{
 color: ${lightGrey4};
 margin: 0;

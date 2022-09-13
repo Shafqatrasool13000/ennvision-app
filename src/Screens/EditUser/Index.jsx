@@ -25,13 +25,15 @@ const validationSchema = Yup.object({
 });
 
 const Index = () => {
+
     const navigate = useNavigate();
     const onSubmit = (value) => {
     };
 
-    const navigateToDashboard = () => {
-        navigate('/');
+    const userListNavigator = () => {
+        navigate('/user-list');
     }
+    
 
     return (
         <>
@@ -133,9 +135,9 @@ const Index = () => {
                                                     padding="11px 8px"
                                                     width="100%"
                                                     type="submit"
-                                                    title="Register"
+                                                    title="Submit"
                                                     fontSize='16px'
-                                                    clicked={navigateToDashboard}
+                                                    clicked={userListNavigator}
                                                 />
                                             </div>
                                         </div>

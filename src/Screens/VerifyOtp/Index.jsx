@@ -5,10 +5,11 @@ import { lightblue } from '../../Components/GlobalStyle';
 import { VerifyOtpStyled } from './style';
 import * as Yup from "yup";
 import FormControl from "../../Components/FormControl";
+import { useNavigate } from 'react-router-dom';
 
 
 const Index = () => {
-
+    const navigate=useNavigate();
     let initialValues = {
         email: "",
         password: "",
@@ -22,6 +23,9 @@ const Index = () => {
             .required("Email is required")
     });
 
+    const becomeProNavigation=() => {
+      navigate('/become-professional');
+    }
     return (
         <VerifyOtpStyled>
             <div className="inner-container">
@@ -63,6 +67,7 @@ const Index = () => {
             title="SUBMIT"
             margin="auto"
             fontSize='16px'
+            clicked={becomeProNavigation}
             />
             </div>
 

@@ -5,8 +5,10 @@ import * as Yup from "yup";
 import FormControl from "../../Components/FormControl";
 import CustomButton from '../../Components/CustomButton/Index';
 import { Col, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Inputs = () => {
+    const navigate=useNavigate();
 
     let initialValues = {
         email: "",
@@ -20,6 +22,9 @@ const Inputs = () => {
         email: Yup.string().email('Email should be valid')
             .required("Email is required")
     });
+    const navigateToProList=()=> {
+      navigate('/professional-list');
+    }
 
     return (
         <InputsStyled>
@@ -148,7 +153,7 @@ const Inputs = () => {
                                             type="submit"
                                             title="Become A Professional"
                                             fontSize='16px'
-                                            // clicked={navigateToDashboard}
+                                            clicked={navigateToProList}
                                         />
                                     </div>
                                 </Row>

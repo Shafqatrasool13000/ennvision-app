@@ -29,8 +29,8 @@ const Index = () => {
     const onSubmit = (value) => {
     };
 
-    const navigateToDashboard = () => {
-        navigate('/');
+    const userListNavigator = () => {
+        navigate('/user-list');
     }
 
     return (
@@ -164,7 +164,7 @@ const Index = () => {
                                                     type="submit"
                                                     title="Register"
                                                     fontSize='16px'
-                                                    clicked={navigateToDashboard}
+                                                    clicked={userListNavigator}
                                                 />
                                             </div>
                                         </div>

@@ -5,6 +5,7 @@ import Login from "./Screens/Login/Index";
 import { ToastContainer } from "react-toastify";
 import Dashboard from './Screens/Dashboard/Index';
 import UserList from './Screens/UserList/Index';
+import PropertyDetails from './Screens/PropertyDetails/Index'
 import ProfessionalList from './Screens/ProfessionalList/Index';
 import PropertyList from './Screens/PropertyList/Index';
 import NewsfeedList from './Screens/NewsfeedList/Index';
@@ -14,6 +15,7 @@ import PostList from './Screens/PostList/Index';
 import Home from './Screens/Home/Index';
 import UserProfile from './Screens/UserProfile/Index';
 import BecomeProfessional from './Screens/BecomeProfessional/Index';
+import EditProfessional from './Screens/BecomeProfessional/EditProfessional';
 import ProtectedRoute from "./PrivateRoute";
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Confirmed from './Screens/Confirmed/Index';
@@ -60,23 +62,24 @@ function App() {
           </ProtectedRoute>
         }>
           <Route index element={<Dashboard />} />
+          <Route path="create-user" element={<CreateUser />} />
           <Route path="user-list" element={<UserList />} />
-          <Route path="professional-list" element={<ProfessionalList />} />
-          <Route path="property-list" element={
-            <PropertyList />} />
+          <Route path="edit-user/:id" element={<EditUser />} />
+          <Route path="user-profile/:id" element={<UserProfile />} />
+          <Route path="property-list" element={<PropertyList />} />
+          <Route path="property-details/:id" element={<PropertyDetails />} />
+          <Route path="create-professional" element={<CreateProfessional />} />
+          <Route path="verify-otp" element={<VerifyOtp />} />
+          <Route path="become-professional" element={<BecomeProfessional />} />
+          <Route path="professional-list" element={<ProfessionalList />} /> 
+          <Route path="edit-professional/:id" element={<EditProfessional />} />
+          <Route path="professional-profile/:id" element={<ProfessionalProfile />} />
           <Route path="post-list" element={<PostList />} />
           <Route path="story-list" element={<StoryList />} />
           <Route path="request-list" element={<RequestList />} />
           <Route path="newsfeed-list" element={<NewsfeedList />} />
-          <Route path="user-profile" element={<UserProfile />} />
-          <Route path="professional-profile" element={<ProfessionalProfile />} />
-          <Route path="create-user" element={<CreateUser />} />
-          <Route path="edit-user" element={<EditUser />} />
-          <Route path="creat-professional" element={<CreateProfessional />} />
           <Route path="confirmed" element={<Confirmed />} />
           <Route path="confirmation" element={<Confirmaton />} />
-          <Route path="verify-otp" element={<VerifyOtp />} />
-          <Route path="become-professional" element={<BecomeProfessional />} />
           <Route path="become-pro2" element={<BecomePro2 />} />
         </Route>
         <Route path="*" element={<h3>Page not Found</h3>} />

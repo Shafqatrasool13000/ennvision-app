@@ -10,9 +10,8 @@ import property6 from '../../assets/Image/ic_property_6.png';
 import bedroomIcon from '../../assets/icons/ic_property_bed.svg';
 import bathIcon from '../../assets/icons/ic_property_bath.svg';
 import areaIcon from '../../assets/icons/ic_property_area.svg';
-import { MiniHeading, TertiraryHeading, UnderlineRed } from '../GlobalStyle';
+import { MiniHeading} from '../GlobalStyle';
 import { Col, Row } from 'react-bootstrap';
-import ViewMore from '../ViewMoreProperties/Index';
 import { PropertiesStyled } from '../../Screens/UserProfile/style';
 import { useNavigate } from 'react-router-dom';
 
@@ -63,7 +62,6 @@ const Properties = () => {
   return (
     <PropertiesStyled>
       <div className="properties pb-5">
-        
         <Row>
           {
             propertiesData.map(({ sub_title, area, bath, propertyImg, bed, title }, index) => (
