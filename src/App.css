@@ -96,8 +96,15 @@ cursor: pointer;
 .page-indicator-section  .indicators .indicator-null{
   background-color:#8D99B247;
   }
+  
+  .ant-drawer-content{
+  background-color: #1B283F !important;
+  }
   .ant-drawer-body{
-padding: 13px !important;   
+    padding: 0 !important;
+  }
+  .ant-drawer-mask{
+    background: none !important;
   }
   .ant-drawer-header{
     padding: 0  !important;

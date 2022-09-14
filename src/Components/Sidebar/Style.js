@@ -9,6 +9,16 @@ position: fixed;
 padding: 20px;
 overflow-y: auto;
 z-index: 20;
+/* Hide scrollbar for Chrome, Safari and Opera */
+&::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+& {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .expand-menu{
 transition: all 1s ease-out;
 transform-origin: top;

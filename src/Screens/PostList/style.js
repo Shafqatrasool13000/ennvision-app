@@ -9,6 +9,17 @@ color: ${secondaryDark3} !important;
 font-family: 'EnnVisionsMedium';
 font-size: 16px !important;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ant-table-body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.ant-table-body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 
 .btn{
 display: flex;

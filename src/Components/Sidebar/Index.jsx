@@ -3,6 +3,7 @@ import expandIcon from '../../assets/icons/ic_blog_detail_arrow.svg';
 import { SidebarContext } from '../../App';
 import { SidebarStyled } from './Style';
 import { useNavigate } from 'react-router-dom';
+import CustomDrawer from '../Drawer/Index';
 
 const Sidebar = () => {
     const navigate = useNavigate();
@@ -25,7 +26,8 @@ const Sidebar = () => {
 
 
     return (
-        <SidebarStyled className={`${showSidebar ? 'd-block' : 'd-none'}`}>
+       <CustomDrawer>
+         <SidebarStyled className={`${showSidebar ? 'd-block' : 'd-none'}`}>
             <p onClick={naivgateDashboard}>Dashboard</p>
             {
                 sidebarData.map(({ name, list_link, create_link, expand }, index) => (
@@ -47,6 +49,7 @@ const Sidebar = () => {
                 ))
             }
         </SidebarStyled>
+       </CustomDrawer>
     )
 }
 
